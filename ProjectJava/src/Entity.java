@@ -3,12 +3,13 @@ abstract public class Entity {
     private String description;
     private int id;
 
-    public Entity(String name, String description, int id){
+    public Entity(String name, String description, int id) {
         this.name = name;
         this.description = description;
         this.id = id;
     }
-    public String getEntityInfo(){
+
+    public String getEntityInfo() {
         return name + description + id;
     }
 
@@ -36,8 +37,12 @@ abstract public class Entity {
         this.id = id;
     }
 
-    public String toString(){
+    public String toString() {
         return getEntityInfo() + getDetails();
+    }
+
+    public int getID() {
+        return this.id;
     }
 
     abstract String getDetails();
