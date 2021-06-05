@@ -3,8 +3,7 @@ public class Admin extends User {
 
     public Admin(String name, String phone, boolean isAdmin) {
         super(name, phone);
-        this.isAdmin=isAdmin;
+        this.isAdmin = isAdmin;
     }
-
 
 }
